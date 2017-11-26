@@ -36,23 +36,21 @@ Plug 'amix/vim-zenroom2'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mkitt/tabline.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'Valloric/YouCompleteMe'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 Plug 'Raimondi/delimitMate'
 Plug 'wojtekmach/vim-rename'
-Plug 'mileszs/ack.vim'
+" Plug 'mileszs/ack.vim'
 Plug 'majutsushi/tagbar'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 
 Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 Plug 'easymotion/vim-easymotion'
-Plug 'Shougo/denite.nvim'
 
 call plug#end()
-
-call deoplete#enable()
 
 " """"""""""""""""""""""""""""""
 " " => Load pathogen paths
@@ -87,6 +85,7 @@ nmap <c-n> <Plug>yankstack_substitute_newer_paste
 let g:ctrlp_working_path_mode = 0
 
 let g:ctrlp_map = '<c-f>'
+" let g:ctrlp_cmd = 'CtrlPMixed'
 map <c-b> :CtrlPBuffer<cr>
 noremap <leader>f :CtrlPMRUFiles<cr>
 
@@ -232,7 +231,7 @@ let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 " Ultisnips
-let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsExpandTrigger="<C-e>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
@@ -256,3 +255,14 @@ let g:tagbar_autoshowtag = 1
 let g:tagbar_autopreview = 0
 let g:tagbar_previewwin_pos = "above"
 let g:tagbar_left = 1
+
+" YCM
+let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_complete_in_comments = 1
+
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+" DelimitMate
+let delimitMate_balance_matchpairs = 1
+let delimitMate_expand_cr = 1

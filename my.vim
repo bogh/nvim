@@ -1,5 +1,10 @@
 
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
+
+" " neocomplete like
+" set completeopt+=noinsert
+" " deoplete.nvim recommend
+" set completeopt+=noselect
 
 " Color scheme
 colorscheme solarized8
@@ -44,3 +49,11 @@ set foldlevel=20
 
 autocmd VimEnter * :NERDTreeToggle<cr>:NERDTreeClose<cr>
 
+set listchars=tab:\.\ ,trail:·
+set list
+set cursorline
+set cursorcolumn
+
+set splitright
+set splitbelow
+set clipboard=unnamed
