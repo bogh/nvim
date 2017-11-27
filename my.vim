@@ -7,13 +7,13 @@
 " set completeopt+=noselect
 
 " Color scheme
-colorscheme solarized8
+colorscheme molokai
 set background=dark
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 " Goyo fix neovim colorscheme reset
 function! s:goyo_leave()
-    colorscheme solarized8
+    colorscheme molokai
     set background=dark
 endfunction
 
@@ -52,7 +52,7 @@ autocmd VimEnter * :NERDTreeToggle<cr>:NERDTreeClose<cr>
 set listchars=tab:\.\ ,trail:·
 set list
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 
 set splitright
 set splitbelow

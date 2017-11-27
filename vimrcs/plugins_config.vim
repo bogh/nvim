@@ -44,7 +44,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'wojtekmach/vim-rename'
 " Plug 'mileszs/ack.vim'
 Plug 'majutsushi/tagbar'
-" Plug 'ludovicchabant/vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags'
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -261,7 +261,7 @@ let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_complete_in_comments = 1
 
-let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_autoclose_preview_window_after_completion = 1
 
 " DelimitMate
 let delimitMate_balance_matchpairs = 1
