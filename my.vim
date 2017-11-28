@@ -1,11 +1,4 @@
 
-" let g:deoplete#enable_at_startup = 1
-
-" " neocomplete like
-" set completeopt+=noinsert
-" " deoplete.nvim recommend
-" set completeopt+=noselect
-
 " Color scheme
 colorscheme molokai
 set background=dark
@@ -25,7 +18,7 @@ map <Leader>bg :let &background = ( &background == "dark"? "light" : "dark" )<CR
 " hi CursorLine cterm=NONE ctermbg=66 ctermfg=white
 
 " Tags
-nmap <F8> :TagbarToggle<CR>
+nmap <F7> :TagbarToggle<CR>
 set tags=.tags
 
 inoremap <C-@> <C-x><C-o>
@@ -35,8 +28,8 @@ nmap <C-g><C-p> :Gpush
 nmap <C-g><C-u> :Gpull
 
 " Duplicate lines
-nmap <C-S-d> "aY"ap
-vmap <C-S-d> mz"ay`zp
+noremap <C-S-d> "aY"ap
+vnoremap <C-S-d> mz"ay`z"ap
 
 " Open file from same directory
 nmap <leader>vo :vsplit %:h<cr>
@@ -47,12 +40,12 @@ highlight OverLength ctermbg=54 ctermfg=white guibg=#592929
 set foldmethod=syntax
 set foldlevel=20
 
-autocmd VimEnter * :NERDTreeToggle<cr>:NERDTreeClose<cr>
+autocmd VimEnter * :NERDTree<cr>:NERDTreeClose<cr>
 
 set listchars=tab:\.\ ,trail:·
 set list
 set cursorline
-" set cursorcolumn
+set cursorcolumn
 
 set splitright
 set splitbelow

@@ -36,13 +36,13 @@ Plug 'amix/vim-zenroom2'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mkitt/tabline.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'Valloric/YouCompleteMe'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'zchee/deoplete-go', { 'do': 'make'}
+" Plug 'Valloric/YouCompleteMe'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 Plug 'Raimondi/delimitMate'
 Plug 'wojtekmach/vim-rename'
-" Plug 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim'
 Plug 'majutsushi/tagbar'
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -51,6 +51,14 @@ Plug 'honza/vim-snippets'
 Plug 'easymotion/vim-easymotion'
 
 call plug#end()
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+
+" neocomplete like
+set completeopt+=noinsert
+" deoplete.nvim recommend
+set completeopt+=noselect
 
 " """"""""""""""""""""""""""""""
 " " => Load pathogen paths
@@ -85,7 +93,7 @@ nmap <c-n> <Plug>yankstack_substitute_newer_paste
 let g:ctrlp_working_path_mode = 0
 
 let g:ctrlp_map = '<c-f>'
-" let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_cmd = 'CtrlPMixed'
 map <c-b> :CtrlPBuffer<cr>
 noremap <leader>f :CtrlPMRUFiles<cr>
 
@@ -98,14 +106,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 """"""""""""""""""""""""""""""
 " Enable all functions in all modes
 let g:user_zen_mode='a'
-
-
-""""""""""""""""""""""""""""""
-" => snipMate (beside <TAB> support <CTRL-j>)
-""""""""""""""""""""""""""""""
-ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
-
 
 """"""""""""""""""""""""""""""
 " => Vim grep
@@ -123,10 +123,11 @@ let g:NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
 let g:NERDTreeHighlightCursorline=1
 
-map <F7> :NERDTreeToggle<cr>
+map <F8> :NERDTreeToggle<cr>
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
+map <F9> :NERDTreeFind<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -231,7 +232,7 @@ let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 " Ultisnips
-let g:UltiSnipsExpandTrigger="<C-e>"
+let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
