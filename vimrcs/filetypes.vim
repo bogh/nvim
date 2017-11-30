@@ -104,6 +104,8 @@ autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 autocmd FileType go nmap <Leader>gi <Plug>(go-info)
 autocmd FileType go nmap <Leader>gm :GoMetaLinter<cr>
+autocmd FileType go set shiftwidth=4
+autocmd FileType go set tabstop=4
 
 "YAML
 autocmd FileType yaml set shiftwidth=2

@@ -54,20 +54,14 @@ call plug#end()
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_camel_case = 1
+let g:deoplete#auto_complete_start_length = 1
+let g:deoplete#sources#go#package_dot = 1
 
 " neocomplete like
 set completeopt+=noinsert
 " deoplete.nvim recommend
-set completeopt+=noselect
-
-" """"""""""""""""""""""""""""""
-" " => Load pathogen paths
-" """"""""""""""""""""""""""""""
-" let s:vim_runtime = expand('<sfile>:p:h')."/.."
-" call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
-" call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
-" call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
-" call pathogen#helptags()
+" set completeopt+=noselect
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
@@ -202,6 +196,7 @@ let g:go_template_use_pkg = 1
 
 let g:go_list_height = 10
 let g:go_list_type = "quickfix"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic (syntax checker)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

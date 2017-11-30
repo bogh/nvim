@@ -1,12 +1,12 @@
 
 " Color scheme
-colorscheme molokai
+colorscheme solarized8
 set background=dark
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 " Goyo fix neovim colorscheme reset
 function! s:goyo_leave()
-    colorscheme molokai
+    colorscheme solarized8
     set background=dark
 endfunction
 
@@ -21,7 +21,7 @@ map <Leader>bg :let &background = ( &background == "dark"? "light" : "dark" )<CR
 nmap <F7> :TagbarToggle<CR>
 set tags=.tags
 
-inoremap <C-@> <C-x><C-o>
+" inoremap <C-@> <C-x><C-o>
 
 nmap <C-g><C-s> :Gstatus<cr>
 nmap <C-g><C-p> :Gpush
@@ -45,8 +45,14 @@ autocmd VimEnter * :NERDTree<cr>:NERDTreeClose<cr>
 set listchars=tab:\.\ ,trail:·
 set list
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 
 set splitright
 set splitbelow
 set clipboard=unnamed
+
+map <A-1> :tabnext 1<cr>
+map <A-2> :tabnext 2<cr>
+map <A-3> :tabnext 3<cr>
+map <A-4> :tabnext 4<cr>
+map <A-5> :tabnext 5<cr>
