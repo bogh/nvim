@@ -262,3 +262,7 @@ let g:ycm_complete_in_comments = 1
 " DelimitMate
 let delimitMate_balance_matchpairs = 1
 let delimitMate_expand_cr = 1
+imap <expr> <CR> pumvisible()
+                 \ ? "\<C-Y>"
+                 \ : "<Plug>delimitMateCR"
+imap <S-Tab> <Plug>delimitMateS-Tab
