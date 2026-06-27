@@ -1,3 +1,4 @@
+require("dap-python").setup("uv")
 return {
   {
     "folke/snacks.nvim",
