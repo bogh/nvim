@@ -21,14 +21,21 @@ return {
       require("lensline").setup({
         profiles = {
           {
-            name = "colorful",
+            name = "basic",
             providers = {
-              { name = "usages", enabled = true, highlight = "Function" },
-              { name = "last_author", enabled = true, highlight = "String" },
+              { name = "usages", enabled = true, include = { "refs" }, breakdown = false },
+              { name = "last_author", enabled = true },
             },
-            style = {
-              highlight = "Comment", -- fallback for providers without a highlight
+            style = { render = "all", placement = "above" },
+          },
+          {
+            name = "informative",
+            providers = {
+              { name = "usages", enabled = true, include = { "refs", "defs", "impls" }, breakdown = true },
+              { name = "diagnostics", enabled = true, min_level = "HINT" },
+              { name = "complexity", enabled = true },
             },
+            style = { render = "focused", placement = "inline" },
           },
         },
       })
@@ -40,10 +47,10 @@ return {
       picker = {
         sources = {
           explorer = {
-            auto_close = true,
-            -- jump = {
-            --   close = true,
-            -- },
+            -- auto_close = true,
+            jump = {
+              close = true,
+            },
           },
         },
       },
