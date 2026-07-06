@@ -1,0 +1,9 @@
+return {
+  { "rebelot/kanagawa.nvim", name = "kanagawa", lazy = false, priority = 1000 },
+  { "jacoborus/tender.vim", name = "tender", lazy = false, priority = 1000 },
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+  { "vague-theme/vague.nvim", name = "vague", lazy = false, priority = 1000 },
+  { "olimorris/onedarkpro.nvim", name = "onedarkpro", lazy = false, priority = 1000 },
+  { "ribru17/bamboo.nvim", name = "bamboo", lazy = false, priority = 1000 },
+}
