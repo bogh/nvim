@@ -6,15 +6,17 @@ return {
     "LazyVim/LazyVim",
 
     opts = {
-      colorscheme = "bamboo",
+      colorscheme = "onedark",
     },
   },
   {
     "oribarilan/lensline.nvim",
     branch = "release/2.x",
     event = "LspAttach",
+    opts = {},
     config = function()
-      require("lensline").setup({
+      local lensline = require("lensline")
+      lensline.setup({
         profiles = {
           {
             name = "basic",
@@ -35,7 +37,11 @@ return {
           },
         },
       })
+      lensline.hide() -- start hidden
     end,
+    keys = {
+      { "<leader>ux", "<cmd>LenslineToggleView<cr>", desc = "Toggle Lensline" },
+    },
   },
   {
     "folke/snacks.nvim",
