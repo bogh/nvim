@@ -6,4 +6,12 @@ return {
   { "vague-theme/vague.nvim", name = "vague", lazy = false, priority = 1000 },
   { "olimorris/onedarkpro.nvim", name = "onedarkpro", lazy = false, priority = 1000 },
   { "ribru17/bamboo.nvim", name = "bamboo", lazy = false, priority = 1000 },
+  {
+    "arnauKL/south.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
+  { "dracula/vim", name = "dracula", lazy = false, priority = 1000 },
+  { "NLKNguyen/papercolor-theme", name = "papercolor", lazy = false, priority = 1000 },
 }

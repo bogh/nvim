@@ -6,8 +6,12 @@ return {
     "LazyVim/LazyVim",
 
     opts = {
-      colorscheme = "onedark",
+      -- colorscheme = "gruvbox",
+      colorscheme = "PaperColor",
     },
+    -- config = function()
+    --   vim.opt.background = "light"
+    -- end,
   },
   {
     "oribarilan/lensline.nvim",
