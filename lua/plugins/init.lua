@@ -6,8 +6,8 @@ return {
     "LazyVim/LazyVim",
 
     opts = {
-      -- colorscheme = "gruvbox",
-      colorscheme = "PaperColor",
+      colorscheme = "gruvbox",
+      -- colorscheme = "PaperColor",
     },
     -- config = function()
     --   vim.opt.background = "light"
