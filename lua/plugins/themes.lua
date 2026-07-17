@@ -14,4 +14,9 @@ return {
   { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
   { "dracula/vim", name = "dracula", lazy = false, priority = 1000 },
   { "NLKNguyen/papercolor-theme", name = "papercolor", lazy = false, priority = 1000 },
+  {
+    "loctvl842/monokai-pro.nvim",
+    lazy = false,
+    priority = 1000,
+  },
 }
