@@ -4,6 +4,7 @@ return {
     opts = {
       indent = {
         disable = {
+          "ts",
           "tsx",
           "json",
           "jsonc",
