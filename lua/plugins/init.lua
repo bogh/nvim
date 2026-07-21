@@ -8,7 +8,8 @@ return {
     opts = {
       -- colorscheme = "gruvbox",
       -- colorscheme = "PaperColor",
-      colorscheme = "south",
+      -- colorscheme = "south",
+      colorscheme = "gruvbox",
     },
     -- config = function()
     --   vim.opt.background = "light"
