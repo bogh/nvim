@@ -1,5 +1,3 @@
--- ~/.config/nvim/lua/plugins/dap.lua
-
 return {
   {
     "mfussenegger/nvim-dap",
@@ -38,22 +36,6 @@ return {
           require("dap").step_out()
         end,
         desc = "Debug: Step Out",
-      },
-
-      -- Additional controls
-      {
-        "<S-F5>",
-        function()
-          require("dap").terminate()
-        end,
-        desc = "Debug: Terminate",
-      },
-      {
-        "<S-F9>",
-        function()
-          require("dap").toggle_breakpoint()
-        end,
-        desc = "Debug: Toggle Breakpoint",
       },
     },
   },
