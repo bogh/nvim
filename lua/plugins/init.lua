@@ -10,6 +10,7 @@ return {
       -- colorscheme = "PaperColor",
       -- colorscheme = "south",
       -- colorscheme = "gruvbox",
+      colorscheme = "oxocarbon",
     },
     -- config = function()
     --   vim.opt.background = "light"
