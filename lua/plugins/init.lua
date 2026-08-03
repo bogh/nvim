@@ -3,20 +3,6 @@ require("dap-python").setup("uv")
 return {
 
   {
-    "LazyVim/LazyVim",
-
-    opts = {
-      -- colorscheme = "gruvbox",
-      -- colorscheme = "PaperColor",
-      -- colorscheme = "south",
-      -- colorscheme = "gruvbox",
-      colorscheme = "oxocarbon",
-    },
-    -- config = function()
-    --   vim.opt.background = "light"
-    -- end,
-  },
-  {
     "oribarilan/lensline.nvim",
     branch = "release/2.x",
     event = "LspAttach",

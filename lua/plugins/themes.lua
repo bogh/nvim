@@ -1,4 +1,30 @@
 return {
+  {
+    "LazyVim/LazyVim",
+
+    opts = {
+      -- colorscheme = "gruvbox",
+      -- colorscheme = "PaperColor",
+      -- colorscheme = "south",
+      -- colorscheme = "gruvbox",
+      -- colorscheme = "oxocarbon",
+      colorscheme = "cendre",
+    },
+    -- config = function()
+    --   vim.opt.background = "light"
+    -- end,
+  },
+  {
+    "Aejkatappaja/cendre",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("cendre").setup({
+        background = "hard", -- "hard" | "medium" | "soft"
+        -- italic = false,
+      })
+    end,
+  },
   { "rebelot/kanagawa.nvim", name = "kanagawa", lazy = false, priority = 1000 },
   { "jacoborus/tender.vim", name = "tender", lazy = false, priority = 1000 },
   { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
@@ -19,9 +45,9 @@ return {
     lazy = false,
     priority = 1000,
   },
-  {
-    "nyoom-engineering/oxocarbon.nvim",
-    lazy = false,
-    priority = 1000,
-  },
+  -- {
+  --   "nyoom-engineering/oxocarbon.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
 }
