@@ -1,0 +1,26 @@
+{
+  "lastChangelogVersion": "0.84.1",
+  "theme": "dark",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-sol",
+  "defaultThinkingLevel": "high",
+  "tuiMode": "regular",
+  "transport": "auto",
+  "compaction": {
+    "enabled": true
+  },
+  "hideThinkingBlock": false,
+  "skills": [
+    "~/.config/opencode/skills"
+  ],
+  "packages": [
+    "npm:@plannotator/pi-extension",
+    "npm:pi-mcp-adapter",
+    "npm:pi-web-access",
+    "npm:pi-markdown-preview",
+    "npm:pi-simplify",
+    "npm:pi-lens",
+    "npm:@tintinweb/pi-subagents",
+    "npm:pi-background-tasks"
+  ]
+}
