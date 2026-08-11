@@ -1,0 +1,77 @@
+
+Host *
+    IdentityAgent ~/.1password/agent.sock
+
+Host web-1
+    HostName 88.198.162.76
+    User root
+
+Host zorro.prod.web
+    HostName 49.13.74.164
+    User root
+
+Host zorro.prod.db
+    HostName 159.69.112.191
+    User root
+
+Host nyx
+    HostName 168.119.104.183
+    User root
+
+Host inno-art
+    HostName 5.75.230.71
+    User root
+
+Host ai-alerting
+    HostName 209.192.211.198
+    User almalinux
+    # Pass qGe+afzf3rQHmB1g
+
+Host epic.prod.web1
+    HostName 49.13.74.208
+    User root
+
+Host epic.prod.db
+    HostName 49.13.208.163
+    IdentityFile ~/.ssh/id_ed25519
+    User root
+
+
+Host bokst1
+    HostName 78.47.124.48
+    User root
+
+
+Host bokst.prod.database
+    HostName 188.245.57.117
+    User root
+
+Host bokst.prod.web1
+   HostName 78.46.185.194
+   User root
+
+
+Host komplast-wp
+    HostName 159.69.115.155
+    User root
+
+Host teona-ariana
+    HostName 49.12.36.145
+    User root
+
+Host lemn-online
+    HostName 159.69.115.155
+    User root
+
+Host komplast-cutter
+    HostName 195.201.95.4
+    User root
+
+
+Host bokst.stage1
+    HostName 49.13.88.32
+    User root
+
+Host bokst.loging
+    HostName 78.46.183.36
+    User root
