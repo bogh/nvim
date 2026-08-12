@@ -8,7 +8,8 @@ return {
       -- colorscheme = "south",
       -- colorscheme = "gruvbox",
       -- colorscheme = "oxocarbon",
-      colorscheme = "cendre",
+      -- colorscheme = "cendre",
+      colorscheme = "tokyonight",
     },
     -- config = function()
     --   vim.opt.background = "light"

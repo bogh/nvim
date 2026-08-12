@@ -10,9 +10,6 @@
     "enabled": true
   },
   "hideThinkingBlock": false,
-  "skills": [
-    "~/.config/opencode/skills"
-  ],
   "packages": [
     "npm:@plannotator/pi-extension",
     "npm:pi-mcp-adapter",
@@ -21,6 +18,6 @@
     "npm:pi-simplify",
     "npm:pi-lens",
     "npm:@tintinweb/pi-subagents",
-    "npm:pi-background-tasks"
+    "npm:pi-undo-redo"
   ]
 }
