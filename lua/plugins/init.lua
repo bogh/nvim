@@ -36,22 +36,6 @@ return {
       { "<leader>ux", "<cmd>LenslineToggleView<cr>", desc = "Toggle Lensline" },
     },
   },
-  {
-    "folke/snacks.nvim",
-    opts = {
-      picker = {
-        sources = {
-          explorer = {
-            -- auto_close = true,
-            jump = {
-              close = true,
-            },
-          },
-        },
-      },
-      scroll = { enabled = false },
-    },
-  },
 
   {
     "neovim/nvim-lspconfig",

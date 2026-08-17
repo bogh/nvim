@@ -1,9 +1,9 @@
 {
-  "lastChangelogVersion": "0.84.1",
+  "lastChangelogVersion": "0.84.2",
   "theme": "dark",
-  "defaultProvider": "openai-codex",
+  "defaultProvider": "openai",
   "defaultModel": "gpt-5.6-sol",
-  "defaultThinkingLevel": "high",
+  "defaultThinkingLevel": "xhigh",
   "tuiMode": "regular",
   "transport": "auto",
   "compaction": {
@@ -14,10 +14,26 @@
     "npm:@plannotator/pi-extension",
     "npm:pi-mcp-adapter",
     "npm:pi-web-access",
-    "npm:pi-markdown-preview",
+    {
+      "source": "npm:pi-markdown-preview",
+      "extensions": [
+        "+index.ts"
+      ]
+    },
     "npm:pi-simplify",
-    "npm:pi-lens",
+    {
+      "source": "npm:pi-lens",
+      "extensions": [
+        "-dist/index.js"
+      ]
+    },
     "npm:@tintinweb/pi-subagents",
-    "npm:pi-undo-redo"
+    {
+      "source": "npm:pi-undo-redo",
+      "extensions": [
+        "-src/extension.ts"
+      ]
+    },
+    "npm:pi-timing"
   ]
 }
