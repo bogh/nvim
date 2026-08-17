@@ -1,4 +1,5 @@
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.local/share/pnpm/bin
 fish_add_path $HOME/.opencode/bin
 fish_add_path $HOME/.local/share/nvim/mason/bin
 
@@ -6,10 +7,11 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set -x DOTFILES_DIR $HOME/.config/nvim
+
 set -x EDITOR nvim
 set -x SHELL /usr/bin/fish
-set -x NODE_EXTRA_CA_CERTS $HOME/.npm/rootCA.pem
-# set -x COMPOSE_PARALLEL_LIMIT 4
+set -x STARSHIP_CONFIG $DOTFILES_DIR/fish/starship.toml
 
 starship init fish | source
 
@@ -19,6 +21,7 @@ alias ls='lsd --header --color=always --group-directories-first'
 
 set -x SSH_AUTH_SOCK ~/.1password/agent.sock
 set -x GIT_SSH /usr/bin/ssh
+set -x PI_CODING_AGENT_DIR $DOTFILES_DIR/pi
 
 abbr -a p pnpm
 abbr -a d docker
