@@ -13,7 +13,15 @@ set -x EDITOR nvim
 set -x SHELL /usr/bin/fish
 set -x STARSHIP_CONFIG $DOTFILES_DIR/fish/starship.toml
 
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+
+set -x PNPM_HOME ~/.local/share/pnpm
+fish_add_path $PNPM_HOME
+
 starship init fish | source
+
+pyenv init - | source
 
 alias upstream="git push -u origin (git branch --show-current)"
 alias cp='xcp'
@@ -28,6 +36,7 @@ abbr -a d docker
 abbr -a lg lazygit
 abbr -a ld lazydocker
 abbr -a cld claude --dangerously-skip-permissions
+abbr -a oc opencode
 
 # git
 abbr -a gco "git checkout"
