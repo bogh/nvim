@@ -49,5 +49,6 @@ abbr -a wts "wt switch"
 abbr -a wca "wt step commit --stage=all"
 abbr -a nv nvim
 abbr -a tx tmux
+abbr -a ts tailscale
 
 echo "BASE initialized..."

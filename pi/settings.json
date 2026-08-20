@@ -36,7 +36,6 @@
     },
     "npm:pi-timing",
     "npm:@tmustier/pi-usage-extension",
-    "npm:pi-web-ui",
     "npm:betterwright"
   ]
 }
