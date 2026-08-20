@@ -1,0 +1,47 @@
+[commit.generation]
+# command = "codex exec -m gpt-5.1-codex-mini -c model_reasoning_effort='low' -c system_prompt='' --sandbox=read-only --json - | jq -sr '[.[] | select(.item.type? == \"agent_message\")] | last.item.text'"
+command = "opencode run -m openai/gpt-5.4-mini --variant low"
+
+
+
+[post-switch]
+tmux = """
+S={{ branch | sanitize }}
+W={{ worktree_path }}
+# tmux new-session -d -s "$S" -c "$W" -n dev
+tmux rename-window "$S"
+"""
+
+# tmux = """
+# S={{ branch | sanitize }}
+# W={{ worktree_path }}
+# tmux new-session -d -s "$S" -c "$W" -n dev
+#
+# # # Create 4-pane layout: shell | backend / claude | frontend
+# # tmux split-window -h -t "$S:dev" -c "$W"
+# # tmux split-window -v -t "$S:dev.0" -c "$W"
+# # tmux split-window -v -t "$S:dev.2" -c "$W"
+# #
+# # # Start services in each pane
+# # tmux send-keys -t "$S:dev.1" 'npm run backend' Enter
+# # tmux send-keys -t "$S:dev.2" 'claude' Enter
+# # tmux send-keys -t "$S:dev.3" 'npm run frontend' Enter
+# #
+# # tmux select-pane -t "$S:dev.0"
+# echo "✓ Session '$S' — attach with: tmux attach -t $S"
+# """
+
+[post-start]
+copy = "wt step copy-ignored"
+# tmux = """
+# S={{ branch | sanitize }}
+# W={{ worktree_path }}
+# # tmux new-session -d -s "$S" -c "$W" -n dev
+# tmux rename-window "$S"
+# """
+
+[list]
+summary = true
+
+# [step.copy-ignored]
+# exclude = ['.env*']
