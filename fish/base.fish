@@ -17,9 +17,10 @@ set -Ux PYENV_ROOT $HOME/.pyenv
 set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 
 set -x PNPM_HOME ~/.local/share/pnpm
-fish_add_path $PNPM_HOME
 
+fish_add_path $PNPM_HOME
 starship init fish | source
+tailscale completion fish | source
 
 pyenv init - | source
 
