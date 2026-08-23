@@ -51,5 +51,8 @@ abbr -a wca "wt step commit --stage=all"
 abbr -a nv nvim
 abbr -a tx tmux
 abbr -a ts tailscale
+abbr -a t tmux
+abbr -a tn tmux new
+abbr -a ta tmux new -A
 
 echo "BASE initialized..."
