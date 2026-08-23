@@ -36,6 +36,7 @@
     },
     "npm:pi-timing",
     "npm:@tmustier/pi-usage-extension",
-    "npm:betterwright"
+    "npm:betterwright",
+    "npm:@xynogen/pix-core"
   ]
 }
