@@ -54,5 +54,6 @@ abbr -a ts tailscale
 abbr -a t tmux
 abbr -a tn tmux new
 abbr -a ta tmux new -A
+abbr -a h herdr
 
 echo "BASE initialized..."
