@@ -1,5 +1,6 @@
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.local/share/pnpm/bin
+fish_add_path $HOME/.local/share/npm/bin
 fish_add_path $HOME/.opencode/bin
 fish_add_path $HOME/.local/share/nvim/mason/bin
 
@@ -54,5 +55,7 @@ abbr -a ts tailscale
 abbr -a t tmux
 abbr -a tn tmux new
 abbr -a ta tmux new -A
+abbr -a pir pi --resume
+abbr -a h herdr
 
 echo "BASE initialized..."
