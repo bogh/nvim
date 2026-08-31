@@ -1,8 +1,8 @@
 {
   "lastChangelogVersion": "0.84.2",
   "theme": "dark",
-  "defaultProvider": "routera-anthropic",
-  "defaultModel": "anthropic/claude-fable-5",
+  "defaultProvider": "routera-gpt",
+  "defaultModel": "openai/gpt-5.6-sol",
   "defaultThinkingLevel": "high",
   "tuiMode": "regular",
   "transport": "auto",
@@ -37,6 +37,7 @@
     "npm:pi-timing",
     "npm:@tmustier/pi-usage-extension",
     "npm:betterwright",
-    "npm:@xynogen/pix-core"
+    "npm:@xynogen/pix-core",
+    "../../../.nvm/versions/node/v24.12.0/lib/node_modules/@jmfederico/pi-web/dist/pi-packages/relays"
   ]
 }
