@@ -6,10 +6,6 @@
     "glab": {
       "command": "glab",
       "args": ["mcp", "serve"]
-    },
-    "semble": {
-      "command": "uvx",
-      "args": ["--from", "semble[mcp]", "semble"]
     }
   }
 }

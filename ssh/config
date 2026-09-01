@@ -78,5 +78,5 @@ Host bokst.loging
 
 
 Host 1n1-laptop
-  Hostname 1n1-laptop
+  Hostname 192.168.2.10
   User badger
