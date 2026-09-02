@@ -29,7 +29,7 @@ onboarding = false
 # red = "#ff6188"
 # green = "#a6e3a1"
 
-name = "one-light"
+name = "nord"
 auto_switch = false
 [terminal]
 # Executable used for new interactive panes.
@@ -285,6 +285,7 @@ hide_tab_bar_when_single_tab = true
 
 # Background notification popup delivery
 show_agent_labels_on_pane_borders = true
+status_indicators = "symbols"
 [ui.toast]
 # off = disable pop-up notifications
 # herdr = show in-app toasts
@@ -392,3 +393,10 @@ key = "prefix+o"
 type = "plugin_action"
 command = "chmarax.herdr-nvim.pick-file"
 description = "open file from agent output"
+
+
+[[keys.command]]
+key = "alt+f"
+type = "plugin_action"
+command = "herdr-fingers.finger"
+description = "Fingers"
