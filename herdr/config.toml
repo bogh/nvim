@@ -391,7 +391,7 @@ description = "open file viewer in tab"
 
 # Nvim
 [[keys.command]]
-key = "prefix+e"
+key = "alt+e"
 type = "plugin_action"
 command = "chmarax.herdr-nvim.toggle"
 description = "nvim sidebar"
