@@ -22,6 +22,7 @@ set -x PNPM_HOME ~/.local/share/pnpm
 fish_add_path $PNPM_HOME
 starship init fish | source
 tailscale completion fish | source
+herdr completions fish | source
 
 pyenv init - | source
 
@@ -58,4 +59,4 @@ abbr -a ta tmux new -A
 abbr -a pir pi --resume
 abbr -a h herdr
 
-echo "BASE initialized..."
+# echo "BASE initialized..."
