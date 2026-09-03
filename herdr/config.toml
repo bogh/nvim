@@ -207,7 +207,7 @@ sidebar_collapsed_mode = "hidden"
 
 # Ask for a tab name before creating a new tab.
 # Set false to create tabs immediately with generated names.
-# prompt_new_tab_name = true
+prompt_new_tab_name = false
 
 # Ask for a workspace name before interactive creation.
 # prompt_new_workspace_name = false
@@ -408,3 +408,38 @@ key = "alt+f"
 type = "plugin_action"
 command = "herdr-fingers.finger"
 description = "Fingers"
+
+
+# Override herdr's built-in "new worktree" key (prefix+shift+g) with worktrunk's
+# default-branch switch/create picker:
+# [[keys.command]]
+# key = "prefix+shift+g"
+# type = "plugin_action"
+# command = "worktrunk.open"
+# description = "Worktree: switch / create from default branch"
+
+# Optional: bind current-branch creation separately.
+[[keys.command]]
+key = "prefix+shift+c"
+type = "plugin_action"
+command = "worktrunk.open-current"
+description = "Worktree: switch / create from current branch"
+
+# Optional: include remote-tracking branches for this picker.
+[[keys.command]]
+key = "prefix+shift+g"
+type = "plugin_action"
+command = "worktrunk.open-with-remotes"
+description = "Worktree: switch / create from local or remote branches"
+#
+# [[keys.command]]
+# key = "prefix+shift+d"
+# type = "plugin_action"
+# command = "worktrunk.remove"
+# description = "Worktree: remove"
+#
+# [[keys.command]]
+# key = "prefix+shift+m"
+# type = "plugin_action"
+# command = "worktrunk.merge"
+# description = "Worktree: merge into the target branch"
