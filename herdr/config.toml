@@ -443,3 +443,10 @@ description = "Worktree: switch / create from local or remote branches"
 # type = "plugin_action"
 # command = "worktrunk.merge"
 # description = "Worktree: merge into the target branch"
+
+
+[[keys.command]]
+key = "alt+t"
+type = "plugin_action"
+command = "herdr-navigator.open"
+description = "jump to anything"
