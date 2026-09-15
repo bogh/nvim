@@ -16,3 +16,17 @@ vim.keymap.set("n", "<leader>ft", function()
 
   Snacks.terminal.open(nil, { cwd = cwd })
 end, { desc = "New Terminal in File Directory" })
+
+-- Copy relative path
+vim.keymap.set("n", "<leader>fy", function()
+  local path = vim.fn.expand("%")
+  vim.fn.setreg("+", path)
+  vim.notify("Copied: " .. path)
+end, { desc = "Yank relative path" })
+
+-- Copy absolute path
+vim.keymap.set("n", "<leader>fY", function()
+  local path = vim.fn.expand("%:p")
+  vim.fn.setreg("+", path)
+  vim.notify("Copied: " .. path)
+end, { desc = "Yank absolute path" })
