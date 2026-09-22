@@ -30,3 +30,9 @@ vim.keymap.set("n", "<leader>fY", function()
   vim.fn.setreg("+", path)
   vim.notify("Copied: " .. path)
 end, { desc = "Yank absolute path" })
+
+vim.keymap.set({ "n", "x" }, "<leader>go", function()
+  Snacks.gitbrowse({ what = "file" })
+end, {
+  desc = "Open current file in Git browser",
+})
