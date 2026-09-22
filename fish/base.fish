@@ -58,5 +58,6 @@ abbr -a tn tmux new
 abbr -a ta tmux new -A
 abbr -a pir pi --resume
 abbr -a h herdr
+abbr -a hs herdr --session
 
 # echo "BASE initialized..."

@@ -9,7 +9,8 @@ return {
       -- colorscheme = "gruvbox",
       -- colorscheme = "oxocarbon",
       -- colorscheme = "cendre",
-      colorscheme = "tokyonight",
+      -- colorscheme = "tokyonight",
+      colorscheme = "kanagawa",
     },
     -- config = function()
     --   vim.opt.background = "light"
