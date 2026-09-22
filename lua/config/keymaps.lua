@@ -54,3 +54,22 @@ map("n", "<C-S-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
 map("n", "<C-S-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "<C-S-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 map("n", "<C-S-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+-- Copy relative path
+vim.keymap.set("n", "<leader>fy", function()
+  local path = vim.fn.expand("%")
+  vim.fn.setreg("+", path)
+  vim.notify("Copied: " .. path)
+end, { desc = "Yank relative path" })
+
+-- Copy absolute path
+vim.keymap.set("n", "<leader>fY", function()
+  local path = vim.fn.expand("%:p")
+  vim.fn.setreg("+", path)
+  vim.notify("Copied: " .. path)
+end, { desc = "Yank absolute path" })
+
+vim.keymap.set({ "n", "x" }, "<leader>go", function()
+  Snacks.gitbrowse({ what = "file" })
+end, {
+  desc = "Open current file in Git browser",
+})

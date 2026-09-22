@@ -49,6 +49,7 @@ Host bokst.prod.database
 Host bokst.prod.web1
    HostName 78.46.185.194
    User root
+   IdentityFile ~/.ssh/home_rsa
 
 
 Host komplast-wp
