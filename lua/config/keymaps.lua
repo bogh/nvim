@@ -38,22 +38,23 @@ local function highlight_search(text, whole_word)
   vim.cmd.redraw()
 end
 
--- Highlight every occurrence of the word under the cursor.
-map("n", "<C-d>", function()
-  highlight_search(vim.fn.expand("<cword>"), true)
-end, { desc = "Highlight word under cursor" })
-
--- Highlight every occurrence of the visual selection.
-map("x", "<C-d>", function()
-  local selection = vim.fn.getregion(vim.fn.getpos("v"), vim.fn.getpos("."), { type = vim.fn.mode() })
-
-  highlight_search(table.concat(selection, "\n"), false)
-end, { desc = "Highlight visual selection" })
+-- -- Highlight every occurrence of the word under the cursor.
+-- map("n", "<C-d>", function()
+--   highlight_search(vim.fn.expand("<cword>"), true)
+-- end, { desc = "Highlight word under cursor" })
+--
+-- -- Highlight every occurrence of the visual selection.
+-- map("x", "<C-d>", function()
+--   local selection = vim.fn.getregion(vim.fn.getpos("v"), vim.fn.getpos("."), { type = vim.fn.mode() })
+--
+--   highlight_search(table.concat(selection, "\n"), false)
+-- end, { desc = "Highlight visual selection" })
 
 map("n", "<C-S-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
 map("n", "<C-S-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "<C-S-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 map("n", "<C-S-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+
 -- Copy relative path
 vim.keymap.set("n", "<leader>fy", function()
   local path = vim.fn.expand("%")
