@@ -57,7 +57,7 @@ map("n", "<C-S-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window
 
 -- Copy relative path
 vim.keymap.set("n", "<leader>fy", function()
-  local path = vim.fn.expand("%")
+  local path = vim.fn.expand("%:.")
   vim.fn.setreg("+", path)
   vim.notify("Copied: " .. path)
 end, { desc = "Yank relative path" })
