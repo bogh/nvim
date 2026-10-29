@@ -1,18 +1,16 @@
 {
-  "lastChangelogVersion": "0.85.1",
+  "lastChangelogVersion": "1.4.0",
   "theme": "dark",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-terra",
+  "defaultModel": "gpt-6-sol",
   "defaultThinkingLevel": "high",
-  "tuiMode": "regular",
   "transport": "auto",
   "compaction": {
-    "enabled": true
+    "enabled": false
   },
   "hideThinkingBlock": true,
   "packages": [
     "npm:@plannotator/pi-extension",
-    "npm:pi-mcp-adapter",
     "npm:pi-web-access",
     {
       "source": "npm:pi-markdown-preview",
@@ -37,7 +35,9 @@
     "npm:pi-timing",
     "npm:@tmustier/pi-usage-extension",
     "npm:betterwright",
-    "npm:@xynogen/pix-core",
-    "../../../.nvm/versions/node/v24.12.0/lib/node_modules/@jmfederico/pi-web/dist/pi-packages/relays"
-  ]
+    "../../../.nvm/versions/node/v24.12.0/lib/node_modules/@jmfederico/pi-web/dist/pi-packages/relays",
+    "npm:pi-subagents",
+    "npm:@xynogen/pix-core"
+  ],
+  "quietStartup": true
 }

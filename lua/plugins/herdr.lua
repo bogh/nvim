@@ -1,3 +1,5 @@
 return {
-  { "ChmaraX/herdr-nvim", opts = {} },
+  { "ChmaraX/herdr-nvim", opts = {
+    keymaps = false,
+  } },
 }

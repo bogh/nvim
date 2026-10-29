@@ -57,7 +57,24 @@ abbr -a t tmux
 abbr -a tn tmux new
 abbr -a ta tmux new -A
 abbr -a pir pi --resume
+abbr -a pic pi \"commit code changes\"
 abbr -a h herdr
 abbr -a hs herdr --session
+
+function __select_directory_node --on-variable PWD
+    set -l directory $PWD
+    while true
+        if test -f "$directory/.nvmrc"
+            nvm use --silent >/dev/null; or nvm use system >/dev/null
+            return
+        end
+        if test "$directory" = /
+            break
+        end
+        set directory (dirname "$directory")
+    end
+    nvm use system >/dev/null
+end
+__select_directory_node
 
 # echo "BASE initialized..."
