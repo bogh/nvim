@@ -8,6 +8,9 @@
   "compaction": {
     "enabled": false
   },
+  "defaultTools": [
+    "+codemode"
+  ],
   "hideThinkingBlock": true,
   "packages": [
     "npm:@plannotator/pi-extension",

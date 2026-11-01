@@ -1,0 +1,32 @@
+[user]
+	name = Bogdan I. Bursuc
+	email = bogdanbursuc86@gmail.com
+[pull]
+  rebase = false
+[alias]
+  ci = commit
+  br = branch
+  co = checkout
+  s = status
+  lg = log --oneline --graph --decorate --all
+  pl = pull
+  ph = push
+  m = merge
+
+[core]
+	editor = nvim
+
+[diff]
+  tool = meld
+
+[difftool "meld"]
+  cmd = meld --wait --diff $LOCAL $REMOTE
+[mergetool "meld"]
+  cmd = meld --wait $MERGED
+[commit]
+  verbose = false
+
+[push]
+  autoSetupRemote = true
+[init]
+	defaultBranch = main

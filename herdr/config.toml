@@ -308,8 +308,8 @@ delivery = "system"
 # position = "bottom-right"
 
 [ui.toast.clipboard]
-# enabled = true
-# position = "bottom-center"
+enabled = true
+position = "top-right"
 
 # Play sounds when agents change state in background workspaces
 [ui.sound]
@@ -347,7 +347,7 @@ resume_agents_on_restore = true
 # Requires a Kitty graphics-compatible outer terminal.
 kitty_graphics = true
 # Save recent pane screen history across full server restarts.
-pane_history = false
+pane_history = true
 # While prefix mode is active, temporarily switch the host input source to
 # an ASCII-capable mode so prefix commands register even when an IME is
 # active, then restore the previous input source when prefix mode exits. On
@@ -397,11 +397,11 @@ type = "plugin_action"
 command = "chmarax.herdr-nvim.toggle"
 description = "nvim sidebar"
 
-# [[keys.command]]
-# key = "prefix+o"
-# type = "plugin_action"
-# command = "chmarax.herdr-nvim.pick-file"
-# description = "open file from agent output"
+[[keys.command]]
+key = "alt+o"
+type = "plugin_action"
+command = "chmarax.herdr-nvim.pick-file"
+description = "open file from agent output"
 
 
 [[keys.command]]

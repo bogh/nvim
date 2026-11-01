@@ -42,6 +42,7 @@ abbr -a cld claude --dangerously-skip-permissions
 abbr -a oc opencode
 
 # git
+abbr -a g git
 abbr -a gco "git checkout"
 abbr -a gs "git status"
 abbr -a gp "git push"

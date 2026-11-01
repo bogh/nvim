@@ -7,10 +7,10 @@ return {
       -- colorscheme = "PaperColor",
       -- colorscheme = "south",
       -- colorscheme = "gruvbox",
-      -- colorscheme = "oxocarbon",
+      colorscheme = "monokai-pro",
       -- colorscheme = "cendre",
       -- colorscheme = "tokyonight",
-      colorscheme = "kanagawa",
+      -- colorscheme = "kanagawa",
     },
     -- config = function()
     --   vim.opt.background = "light"

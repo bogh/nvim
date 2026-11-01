@@ -4,3 +4,4 @@
 -- vim.opt.relativenumber = false
 -- vim.opt.background = "light"
 vim.g.lazyvim_picker = "fzf"
+-- vim.opt.foldlevelstart = 0
