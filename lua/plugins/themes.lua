@@ -3,14 +3,7 @@ return {
     "LazyVim/LazyVim",
 
     opts = {
-      -- colorscheme = "gruvbox",
-      -- colorscheme = "PaperColor",
-      -- colorscheme = "south",
-      -- colorscheme = "gruvbox",
-      colorscheme = "monokai-pro",
-      -- colorscheme = "cendre",
-      -- colorscheme = "tokyonight",
-      -- colorscheme = "kanagawa",
+      colorscheme = "blue",
     },
     -- config = function()
     --   vim.opt.background = "light"
