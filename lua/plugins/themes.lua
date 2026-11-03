@@ -3,7 +3,7 @@ return {
     "LazyVim/LazyVim",
 
     opts = {
-      colorscheme = "blue",
+      colorscheme = "darkblue",
     },
     -- config = function()
     --   vim.opt.background = "light"
