@@ -50,10 +50,10 @@ end
 --   highlight_search(table.concat(selection, "\n"), false)
 -- end, { desc = "Highlight visual selection" })
 
-map("n", "<C-S-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
-map("n", "<C-S-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
-map("n", "<C-S-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
-map("n", "<C-S-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+map("n", "<C-S-k>", "<cmd>resize +10<cr>", { desc = "Increase window height" })
+map("n", "<C-S-j>", "<cmd>resize -10<cr>", { desc = "Decrease window height" })
+map("n", "<C-S-h>", "<cmd>vertical resize -10<cr>", { desc = "Decrease window width" })
+map("n", "<C-S-l>", "<cmd>vertical resize +10<cr>", { desc = "Increase window width" })
 
 -- Copy relative path
 vim.keymap.set("n", "<leader>fy", function()
