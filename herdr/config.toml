@@ -29,7 +29,7 @@ onboarding = false
 
 # name = "kanagawa"
 # auto_switch = false
-name = "one-light"
+name = "catpuccin"
 auto_switch = false
 [terminal]
 # Executable used for new interactive panes.

@@ -4,6 +4,12 @@ return {
     opts = {
       picker = {
         sources = {
+          projects = {
+            dev = { "~/work" }, -- each subdir with .git etc. becomes a project
+            projects = { "~/work/helga" }, -- or list specific paths
+            max_depth = 2, -- how deep to look under each dev dir
+            patterns = { ".git", "package.json", "Makefile", "pyproject.toml" },
+          },
           explorer = {
             -- auto_close = true,
             jump = {

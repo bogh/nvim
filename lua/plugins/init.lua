@@ -1,4 +1,4 @@
-require("dap-python").setup("uv")
+-- require("dap-python").setup("uv")
 
 return {
 
@@ -43,10 +43,10 @@ return {
       inlay_hints = { enabled = false },
     },
   },
-  {
-    "danitrap/version-lens.nvim",
-    config = true,
-  },
+  -- {
+  --   "danitrap/version-lens.nvim",
+  --   config = true,
+  -- },
   -- ~/.config/nvim/lua/plugins/blame.lua
 
   {
