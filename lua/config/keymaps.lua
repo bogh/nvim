@@ -19,6 +19,19 @@ map("n", "<leader>ft", function()
   Snacks.terminal.open(nil, { cwd = cwd })
 end, { desc = "New Terminal in File Directory" })
 
+-- Focus or toggle Explorer
+vim.keymap.set("n", "<leader>e", function()
+  local explorer = Snacks.picker.get({ source = "explorer" })[1]
+
+  if not explorer then
+    Snacks.explorer()
+  elseif explorer:is_focused() then
+    explorer:close()
+  else
+    explorer:focus("list")
+  end
+end, { desc = "Explorer (open or focus)" })
+
 local function highlight_search(text, whole_word)
   if not text or text == "" then
     return

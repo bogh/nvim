@@ -7,6 +7,7 @@ vim.g.lazyvim_picker = "fzf"
 -- vim.opt.foldlevelstart = 0
 vim.g.lazyvim_picker = "snacks"
 
+vim.g.root_spec = { ".git", "lsp", "cwd" }
 vim.filetype.add({
   filename = { Caddyfile = "caddy" },
   extension = { caddy = "caddy", caddyfile = "caddy" },
