@@ -15,6 +15,11 @@ return {
             jump = {
               -- close = true,
             },
+            layout = {
+              layout = {
+                width = 50,
+              },
+            },
             -- layout = {
             --   { preview = "main" },
             --   -- layout = {
