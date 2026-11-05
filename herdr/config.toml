@@ -404,11 +404,11 @@ command = "chmarax.herdr-nvim.pick-file"
 description = "open file from agent output"
 
 
-[[keys.command]]
-key = "alt+f"
-type = "plugin_action"
-command = "herdr-fingers.finger"
-description = "Fingers"
+# [[keys.command]]
+# key = "alt+f"
+# type = "plugin_action"
+# command = "herdr-fingers.finger"
+# description = "Fingers"
 
 
 # Override herdr's built-in "new worktree" key (prefix+shift+g) with worktrunk's
