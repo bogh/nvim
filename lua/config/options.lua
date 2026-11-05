@@ -5,6 +5,7 @@
 -- vim.opt.background = "light"
 vim.g.lazyvim_picker = "fzf"
 -- vim.opt.foldlevelstart = 0
+vim.g.lazyvim_picker = "snacks"
 
 vim.filetype.add({
   filename = { Caddyfile = "caddy" },
