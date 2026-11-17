@@ -25,6 +25,7 @@ tailscale completion fish | source
 herdr completions fish | source
 
 pyenv init - | source
+zoxide init fish | source
 
 alias upstream="git push -u origin (git branch --show-current)"
 alias cp='xcp'
