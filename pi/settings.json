@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "1.5.0",
+  "lastChangelogVersion": "1.5.2",
   "theme": "dark",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-6-sol",
@@ -40,15 +40,25 @@
     "npm:betterwright",
     "../../../.nvm/versions/node/v24.12.0/lib/node_modules/@jmfederico/pi-web/dist/pi-packages/relays",
     "npm:pi-subagents",
-    "npm:@xynogen/pix-core"
+    "npm:@xynogen/pix-core",
+    "npm:pi-worktrunk"
   ],
   "quietStartup": true,
   "deviceId": "3b53f47c-9a87-40fc-96c7-f6175f552139",
   "extensionChangelogVersions": {
-    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.46.0",
-    "{\"source\":\"npm:@tintinweb/pi-subagents\",\"scope\":\"user\"}": "0.23.0",
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.48.0",
+    "{\"source\":\"npm:@tintinweb/pi-subagents\",\"scope\":\"user\"}": "0.25.0",
     "{\"source\":\"npm:@tmustier/pi-usage-extension\",\"scope\":\"user\"}": "0.10.2",
-    "{\"source\":\"npm:betterwright\",\"scope\":\"user\"}": "2.9.0",
-    "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.84.0"
-  }
+    "{\"source\":\"npm:betterwright\",\"scope\":\"user\"}": "2.9.1",
+    "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.88.1"
+  },
+  "enabledModels": [
+    "openai/gpt-6.1-sol",
+    "openai/gpt-6-astra",
+    "openai/gpt-6-luna",
+    "openai/gpt-6-sol",
+    "openai/gpt-6.1-terra",
+    "openai/gpt-daybreak-blue-latest",
+    "openai/gpt-daybreak-red-latest"
+  ]
 }

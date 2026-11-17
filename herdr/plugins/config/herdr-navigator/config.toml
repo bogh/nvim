@@ -23,7 +23,17 @@ engine = "nucleo"
 
 # Source priority controls initial ordering and tie/near-tie ranking.
 # Accepted names: agent, server/remote, workspace/open, project, session, zoxide, root, quick, plugin.
-source_order = ["workspace", "agent", "project", "session", "zoxide", "root", "server", "quick", "plugin"]
+source_order = [
+  "workspace",
+  "agent",
+  "project",
+  "session",
+  "zoxide",
+  "root",
+  "server",
+  "quick",
+  "plugin",
+]
 
 # How strongly source_order influences search ranking.
 # Set 0 for pure matcher score.
@@ -52,10 +62,10 @@ check_updates = true
 # directory_template_key = "alt-enter" # also accepts Ctrl forms such as "ctrl-g"
 
 # Vim-style normal mode: j/k move, source keys filter, and / starts searching.
-vim_mode = true
+vim_mode = false
 
 # Start searching immediately after a Vim source-filter key.
-vim_filter_search = true
+vim_filter_search = false
 
 # Start searching immediately after a Vim source-filter key.
 # Optional: override source filter shortcuts. Values accept "ctrl-x", "ctrl+x", "^x", or "x".
