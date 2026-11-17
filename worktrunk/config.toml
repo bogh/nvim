@@ -1,3 +1,7 @@
+[merge]
+rebase = false
+squash = false
+
 [commit.generation]
 command = "pi -p --model openai/gpt-5.6-luna --thinking off --no-mcp -ne -ns -nt --no-session"
 
