@@ -4,7 +4,8 @@ return {
 
     opts = {
       -- colorscheme = "darkblue",
-      colorscheme = "catppuccin",
+      -- colorscheme = "everforest",
+      colorscheme = "cyberdream",
     },
     -- config = function()
     --   vim.opt.background = "light"
@@ -28,6 +29,12 @@ return {
   { "vague-theme/vague.nvim", name = "vague", lazy = false, priority = 1000 },
   { "olimorris/onedarkpro.nvim", name = "onedarkpro", lazy = false, priority = 1000 },
   { "ribru17/bamboo.nvim", name = "bamboo", lazy = false, priority = 1000 },
+  { "sainnhe/everforest", name = "everforest", lazy = false, priority = 1000 },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+  },
   {
     "arnauKL/south.nvim",
     lazy = false,
